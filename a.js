@@ -1,5 +1,5 @@
 fetch('/api/admin/give', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ user: 'YOUR_DISCORD_ID', amount: 100000 })
+  body: JSON.stringify({ user: '982815197678931998', amount: 100000 })
 }).then(r => r.text()).then();
